@@ -15,14 +15,14 @@ namespace Ark.Collections {
         int _current;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DelayQueue{T}"/> class that is empty and has the default initial number of priority tiers.
+        /// Initializes a new instance of the <see cref="T:Ark.Collections.DelayQueue`1{T}"/> class that is empty and has the default initial number of priority tiers.
         /// </summary>
         public DelayQueue()
             : this(4) {
         }
         
         /// <summary>
-        /// Initializes a new instance of the <see cref="DelayQueue{T}"/> class that is empty and has the specified initial number of priority tiers.
+        /// Initializes a new instance of the <see cref="T:Ark.Collections.DelayQueue`1{T}"/> class that is empty and has the specified initial number of priority tiers.
         /// </summary>
         /// <param name="capacity">Initial number of priority tiers.</param>
         public DelayQueue(int capacity = 4) {
@@ -44,7 +44,7 @@ namespace Ark.Collections {
         /// <summary>
         /// Adds an object to the queue.
         /// </summary>
-        /// <param name="item">The object to add to the <see cref="Queue{T}"/>.</param>
+        /// <param name="item">The object to add to the queue.</param>
         /// <param name="delay">The relative priority.</param>
         public void Enqueue(T item, int delay) {
             if (delay < 0) {
